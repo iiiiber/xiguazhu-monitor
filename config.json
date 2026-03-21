@@ -1,0 +1,34 @@
+{
+  "name": "xiguazhu-monitor",
+  "version": "1.0.0",
+  "description": "西瓜猪开放平台 - 实时数据观测系统",
+  
+  "api": {
+    "baseUrl": "https://openapi.xgzcdn.com",
+    "appKey": "bf701f9ca99d5568",
+    "appSecret": "7800193a254696a1248768e61b3e117e",
+    "memberId": "38011"
+  },
+  
+  "endpoints": {
+    "cpsOrderList": "/cps/cpsOrder/list",
+    "signFields": ["endTime", "offset", "pageSize", "queryType", "startTime", "timestamp"]
+  },
+  
+  "server": {
+    "port": 3000,
+    "host": "0.0.0.0"
+  },
+  
+  "poll": {
+    "interval": 30,
+    "enabled": true,
+    "daysRange": 7
+  },
+  
+  "params": {
+    "queryType": 1,
+    "pageSize": 20,
+    "offset": 0
+  }
+}

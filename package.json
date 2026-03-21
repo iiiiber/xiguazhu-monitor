@@ -1,0 +1,18 @@
+{
+  "name": "xiguazhu-monitor",
+  "version": "1.0.0",
+  "description": "西瓜猪开放平台 - 实时数据观测系统",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.14.2",
+    "crypto": "^1.0.1",
+    "node-fetch": "^2.7.0",
+    "ejs": "^3.1.9",
+    "chart.js": "^4.4.0"
+  }
+}
